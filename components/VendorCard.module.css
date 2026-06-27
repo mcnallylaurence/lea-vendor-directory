@@ -1,0 +1,46 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--warm);
+  border: 1px solid rgba(184, 150, 78, 0.15);
+  border-radius: 6px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px rgba(91, 98, 57, 0.12);
+  transform: translateY(-2px);
+}
+
+.body {
+  padding: 1rem 1.2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.badge {
+  font-family: 'Alice', serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--txt);
+  line-height: 1.2;
+}
+
+.location {
+  font-size: 0.85rem;
+  color: var(--stone);
+  line-height: 1;
+}

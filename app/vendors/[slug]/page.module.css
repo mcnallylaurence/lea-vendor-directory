@@ -1,0 +1,116 @@
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem var(--pad-x) var(--pad-y);
+}
+
+.back {
+  margin-bottom: 2rem;
+}
+
+.back a {
+  font-size: 0.8rem;
+  font-family: 'Alice', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--stone);
+  text-decoration: none;
+}
+
+.back a:hover {
+  color: var(--gold);
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+  max-width: 900px;
+}
+
+.imageWrap {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding-top: 0.5rem;
+}
+
+.badge {
+  font-family: 'Alice', serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.name {
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  color: var(--green);
+  line-height: 1.15;
+  margin-top: 0.2rem;
+}
+
+.location {
+  font-size: 0.9rem;
+  color: var(--stone);
+  line-height: 1.5;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.8rem;
+}
+
+.linkBtn {
+  display: inline-block;
+  font-family: 'Alice', serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.65rem 1.4rem;
+  border-radius: 3px;
+  text-decoration: none;
+  background: var(--green);
+  color: var(--warm);
+  transition: background 0.15s ease;
+}
+
+.linkBtn:hover {
+  background: var(--green-hv);
+  color: var(--warm);
+}
+
+.linkBtnSecondary {
+  background: transparent;
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+
+.linkBtnSecondary:hover {
+  background: var(--cream);
+  color: var(--green);
+}
+
+.curation {
+  margin-top: 1.2rem;
+  font-size: 0.75rem;
+  color: var(--stone);
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .profile {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

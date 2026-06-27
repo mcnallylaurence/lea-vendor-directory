@@ -1,0 +1,86 @@
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--pad-x);
+}
+
+.hero {
+  padding: var(--pad-y) 0 2rem;
+  max-width: 640px;
+}
+
+.eyebrow {
+  font-family: 'Alice', serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+
+.heading {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  color: var(--green);
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  font-size: 0.95rem;
+  color: var(--txt-mid);
+  line-height: 1.7;
+}
+
+.filterSection {
+  padding: 1.5rem 0 2rem;
+  border-bottom: 1px solid rgba(184, 150, 78, 0.15);
+  margin-bottom: 2rem;
+}
+
+.results {
+  padding-bottom: var(--pad-y);
+}
+
+.count {
+  font-size: 0.8rem;
+  color: var(--stone);
+  font-family: 'Alice', serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.empty {
+  padding: 3rem 0;
+  color: var(--stone);
+  font-size: 0.95rem;
+}
+
+.footer {
+  background: var(--cream);
+  border-top: 1px solid rgba(184, 150, 78, 0.2);
+  padding: 1.5rem var(--pad-x);
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--stone);
+}
+
+.footer a {
+  color: var(--gold);
+}
+
+.footer a:hover {
+  color: var(--gold-lt);
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

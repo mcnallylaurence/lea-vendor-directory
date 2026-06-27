@@ -1,0 +1,39 @@
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--pad-y) var(--pad-x);
+}
+
+.eyebrow {
+  font-family: 'Alice', serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold);
+  margin-bottom: 0.75rem;
+}
+
+.heading {
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  color: var(--green);
+  margin-bottom: 1rem;
+}
+
+.body {
+  font-size: 0.95rem;
+  color: var(--txt-mid);
+  margin-bottom: 1.5rem;
+}
+
+.link {
+  font-family: 'Alice', serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+}
+
+.link:hover {
+  color: var(--gold-lt);
+}
